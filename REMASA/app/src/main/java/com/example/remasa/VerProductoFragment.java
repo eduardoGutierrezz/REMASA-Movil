@@ -80,9 +80,15 @@ public class VerProductoFragment extends DialogFragment {
 
         getProducto(id_prdct);
 
+<<<<<<< HEAD
         if(!Usuario.tipoUsuario.equals("Cliente")){
             btnAgregar.setVisibility(View.GONE);
         }
+=======
+        /*if(!Usuario.tipoUsuario.equals("Cliente")){
+            btnAgregar.setVisibility(View.GONE);
+        }*/
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
 
         return v;
     }

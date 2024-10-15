@@ -233,6 +233,7 @@
         android:layout_marginEnd="56dp"
         android:background="@color/white"
         android:ems="10"
+<<<<<<< HEAD
         android:enabled="true"
         android:gravity="center"
         android:hint="Gabriel Alejandro"
@@ -240,6 +241,13 @@
         android:inputType="text"
         android:textColor="@color/black"
         android:textSize="20dp"
+=======
+        android:hint="Escribe el nombre"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:gravity="center"
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tVFecha" />
@@ -253,6 +261,7 @@
         android:layout_marginEnd="56dp"
         android:background="@color/white"
         android:ems="10"
+<<<<<<< HEAD
         android:enabled="true"
         android:gravity="center"
         android:hint="3330300900"
@@ -261,6 +270,14 @@
         android:maxLength="10"
         android:textColor="@color/black"
         android:textSize="20dp"
+=======
+        android:hint="Escribe el telefono"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:maxLength="10"
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tVTelefono" />
@@ -276,10 +293,16 @@
         android:ems="10"
         android:enabled="false"
         android:gravity="center"
+<<<<<<< HEAD
         android:hint="127"
         android:textColorHint="@color/black"
         android:inputType="number"
         android:minHeight="48dp"
+=======
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:hint="100"
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
         android:textColor="@color/black"
         android:textSize="20dp"
         app:layout_constraintEnd_toStartOf="@+id/tVMxn"

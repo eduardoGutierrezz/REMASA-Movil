@@ -129,7 +129,10 @@
         android:layout_marginEnd="56dp"
         android:background="@color/white"
         android:ems="10"
+<<<<<<< HEAD
         android:enabled="false"
+=======
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
         android:gravity="center"
         android:hint="Escribe el nombre"
         android:inputType="text"
@@ -364,7 +367,11 @@
         android:layout_marginTop="4dp"
         android:background="@color/white"
         android:ems="10"
+<<<<<<< HEAD
         android:enabled="false"
+=======
+        android:enabled="true"
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
         android:gravity="center"
         android:hint="Escriba el telefóno"
         android:inputType="number"

@@ -60,7 +60,11 @@
         android:layout_width="200dp"
         android:layout_height="60dp"
         android:layout_marginStart="106dp"
+<<<<<<< HEAD
         android:layout_marginTop="15dp"
+=======
+        android:layout_marginTop="5dp"
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
         android:layout_marginEnd="105dp"
         android:backgroundTint="@color/greenremasa"
         android:text="Iniciar sesión"
@@ -133,4 +137,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/eTContra" />
+<<<<<<< HEAD
+=======
+
+    <Button
+        android:id="@+id/btnIngresarSinCuenta"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="105dp"
+        android:backgroundTint="@color/greenremasa"
+        android:text="Ingresar sin cuenta"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIniciarSesion" />
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
 </androidx.constraintlayout.widget.ConstraintLayout>

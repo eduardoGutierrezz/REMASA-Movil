@@ -108,7 +108,11 @@
         app:layout_constraintTop_toBottomOf="@+id/btnHome"
         app:srcCompat="@drawable/bannersurtidorfinalizados" />
 
+<<<<<<< HEAD
 <!--
+=======
+
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
     <TextView
         android:id="@+id/tVPedido"
         android:layout_width="127dp"
@@ -151,6 +155,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tVFecha"
         app:layout_constraintTop_toBottomOf="@+id/iVBanner"
+<<<<<<< HEAD
         tools:ignore="MissingConstraints" />-->
 
 
@@ -161,5 +166,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iVBanner" />
+=======
+        tools:ignore="MissingConstraints" />
+
+
+    <ListView
+        android:id="@+id/lVPedidos"
+        android:layout_width="416dp"
+        android:layout_height="560dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVTelefono" />
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
 
 </androidx.constraintlayout.widget.ConstraintLayout>

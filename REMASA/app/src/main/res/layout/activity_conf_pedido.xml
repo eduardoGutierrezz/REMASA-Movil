@@ -169,7 +169,10 @@
         android:ems="10"
         android:gravity="center"
         android:hint="100"
+<<<<<<< HEAD
         android:textColorHint="@color/black"
+=======
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
         android:inputType="number"
         android:textColor="@color/black"
         android:textSize="24dp"

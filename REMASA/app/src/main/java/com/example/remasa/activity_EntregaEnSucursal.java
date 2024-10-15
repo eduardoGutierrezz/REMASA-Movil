@@ -101,8 +101,13 @@ public class activity_EntregaEnSucursal extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+<<<<<<< HEAD
                 String nombre = "Gabriel";
                 String telefono = "33333333";
+=======
+                String nombre = eTNombre.getText().toString();
+                String telefono = eTTelefono.getText().toString();
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
 
                 if(rBPagarEnSucursal.isChecked()&&(!nombre.equals(""))&&(!telefono.equals(""))){
                 Intent siguiente = new Intent(getApplicationContext(), activityConfPedido.class);

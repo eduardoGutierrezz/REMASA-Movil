@@ -15,6 +15,12 @@
         android:theme="@style/Theme.REMASA"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
+=======
+            android:name=".ActivityEnDesarrolloAnuncio"
+            android:exported="false" />
+        <activity
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
             android:name=".activity_AdminModificarProducto"
             android:exported="false" />
         <activity

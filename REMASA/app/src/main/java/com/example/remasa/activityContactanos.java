@@ -74,7 +74,11 @@ public class activityContactanos extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+<<<<<<< HEAD
                 Intent siguiente = new Intent(getApplicationContext(), activyCarrito.class);
+=======
+                Intent siguiente = new Intent(getApplicationContext(), ActivityEnDesarrolloAnuncio.class);
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
                 startActivity(siguiente);
             }
         });
@@ -91,7 +95,11 @@ public class activityContactanos extends AppCompatActivity {
         btnCuenta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+<<<<<<< HEAD
                 Intent siguiente = new Intent(getApplicationContext(), activity_CuentaUsuario.class);
+=======
+                Intent siguiente = new Intent(getApplicationContext(), ActivityEnDesarrolloAnuncio.class);
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
                 startActivity(siguiente);
             }
         });

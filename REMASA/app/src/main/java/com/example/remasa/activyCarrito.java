@@ -16,10 +16,15 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.remasa.adapter.AdapterFragmentCarrito;
+<<<<<<< HEAD
 import com.example.remasa.adapter.ProdAdapter;
 import com.example.remasa.model.Detalleventa;
 
 import com.example.remasa.model.Producto;
+=======
+import com.example.remasa.model.Detalleventa;
+
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -33,6 +38,7 @@ public class activyCarrito extends AppCompatActivity {
     EditText eTPerecioTotal;
     TextView tVTotal, tVMxn;
     Button btnRegresar, btnContinuar;
+<<<<<<< HEAD
     //RecyclerView RvProdct;
 
     //-----
@@ -41,12 +47,18 @@ public class activyCarrito extends AppCompatActivity {
     FirebaseFirestore mFirestore;
     Query query;
     //----
+=======
+    RecyclerView RvProdct;
+
+
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activy_carrito);
 
+<<<<<<< HEAD
         //Consulta a bd
         mFirestore = FirebaseFirestore.getInstance();
         mRecycler = findViewById(R.id.RvProdct);
@@ -63,6 +75,8 @@ public class activyCarrito extends AppCompatActivity {
         mRecycler.setItemAnimator(null);
         //Consulta bd
 
+=======
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
         btnHome = findViewById(R.id.btnHome);
         btnCatalogo = findViewById(R.id.btnCatalogo);
         btnCarrito = findViewById(R.id.btnCarrito);
@@ -74,19 +88,31 @@ public class activyCarrito extends AppCompatActivity {
         tVMxn = findViewById(R.id.tVMxn);
         btnRegresar = findViewById(R.id.btnRegresar);
         btnContinuar = findViewById(R.id.btnContinuar);
+<<<<<<< HEAD
+=======
+        RvProdct = findViewById(R.id.RvProdct);
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
 
 
 
 
         //------------------------------------------------------------------------------------------
         // Supongamos que tienes una referencia a la colección "productos"
+<<<<<<< HEAD
         //CollectionReference productosRef = FirebaseFirestore.getInstance().collection("Detalleventa");
+=======
+        CollectionReference productosRef = FirebaseFirestore.getInstance().collection("Detalleventa");
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
 
 // Definir el precio a filtrar (por ejemplo, 100)
         int idFiltrar = 9;
 
 // Crear una consulta para filtrar documentos con el mismo precio
+<<<<<<< HEAD
         //Query consulta = productosRef.whereEqualTo("idventa", idFiltrar);
+=======
+        Query consulta = productosRef.whereEqualTo("idventa", idFiltrar);
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
 
 // Ejecutar la consulta y obtener los resultados
         /*consulta.get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
@@ -123,7 +149,11 @@ public class activyCarrito extends AppCompatActivity {
                 .build();
         if (options.getSnapshots().isEmpty()) {
             // No hay datos para mostrar
+<<<<<<< HEAD
             //Toast.makeText(this, "No se encontro", Toast.LENGTH_SHORT).show();
+=======
+            Toast.makeText(this, "No se encontro", Toast.LENGTH_SHORT).show();
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
         } else {
         // Crear el adaptador
                 AdapterFragmentCarrito adapter = new AdapterFragmentCarrito(options);
@@ -231,6 +261,7 @@ public class activyCarrito extends AppCompatActivity {
         });
 
     }
+<<<<<<< HEAD
 
     //Consulta bd
     @Override
@@ -245,4 +276,6 @@ public class activyCarrito extends AppCompatActivity {
         mAdapter.stopListening();
     }
     //Consulta bd
+=======
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
 }

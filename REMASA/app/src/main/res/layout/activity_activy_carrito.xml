@@ -95,7 +95,11 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/RvProdct"
         android:layout_width="350dp"
+<<<<<<< HEAD
         android:layout_height="80dp"
+=======
+        android:layout_height="60dp"
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
         android:layout_marginStart="30dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="31dp"

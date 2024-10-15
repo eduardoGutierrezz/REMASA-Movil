@@ -118,7 +118,11 @@
                             android:id="@+id/tvDescripcion"
                             android:layout_width="80dp"
                             android:layout_height="wrap_content"
+<<<<<<< HEAD
                             android:text="Descripcion: "
+=======
+                            android:text="Descripción: "
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
                             android:textColor="@color/blueremasa"
                             android:textStyle="bold"/>
 

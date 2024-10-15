@@ -18,7 +18,11 @@ import android.widget.Toast;
 public class MainActivity2activityLoggeo extends AppCompatActivity {
     //------Creacion de elementos-------------------------------------------------------------------
     ImageView iVLoggin;
+<<<<<<< HEAD
     Button btnIniciarSesion;
+=======
+    Button btnIniciarSesion, btnIngresarSinCuenta;
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
     EditText eTUsuario, etContra;
     TextView tVUsuario, tVContra,tVISB, tVCrearCuenta;
 
@@ -37,8 +41,14 @@ public class MainActivity2activityLoggeo extends AppCompatActivity {
         tVISB = findViewById(R.id.tVISB);
         iVLoggin = findViewById(R.id.iVLoggin);
         tVCrearCuenta = findViewById(R.id.tVCrearCuenta);
+<<<<<<< HEAD
 
         String textoConSubrayado = "¿No tienes una cuenta? registrate aquí";
+=======
+        btnIngresarSinCuenta = findViewById(R.id.btnIngresarSinCuenta);
+
+        String textoConSubrayado = "¿No tienes una cuenta? regístrate aquí";
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
         SpannableString spannableString = new SpannableString(textoConSubrayado);
         spannableString.setSpan(new UnderlineSpan(), 0, textoConSubrayado.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         tVCrearCuenta.setText(spannableString);
@@ -64,7 +74,11 @@ public class MainActivity2activityLoggeo extends AppCompatActivity {
                 int it = 0;
                 //Condicional para comparar valores entre las variables
                 if(correoUsuarioIntro.equals(usuario.getCorreo())&&contraseniaIntro.equals(usuario.getContraseña())){
+<<<<<<< HEAD
                     //Toast.makeText(MainActivity2activityLoggeo.this, " la contraseña es"+usuario.getContraseña()+"Tu usuario es "+usuario.getTipoUsuario(), Toast.LENGTH_LONG).show();
+=======
+                    Toast.makeText(MainActivity2activityLoggeo.this, " la contraseña es"+usuario.getContraseña()+"Tu usuario es "+usuario.getTipoUsuario(), Toast.LENGTH_LONG).show();
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
                     if(usuario.getTipoUsuario().equals("Cliente")){
                         Intent siguiente = new Intent(getApplicationContext(), activityPresentacion.class);
                         startActivity(siguiente);
@@ -90,7 +104,17 @@ public class MainActivity2activityLoggeo extends AppCompatActivity {
             }
         });
 
+<<<<<<< HEAD
 
+=======
+        btnIngresarSinCuenta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent siguiente = new Intent(getApplicationContext(), activityPresentacion.class);
+                startActivity(siguiente);
+            }
+        });
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
 
     }
 }

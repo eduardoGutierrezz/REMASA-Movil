@@ -9,7 +9,11 @@
 
     <LinearLayout
         android:layout_width="300dp"
+<<<<<<< HEAD
         android:layout_height="550dp"
+=======
+        android:layout_height="650dp"
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
         android:background="@drawable/fondoproducto"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="16dp"
@@ -26,7 +30,11 @@
 
         <LinearLayout
             android:layout_width="match_parent"
+<<<<<<< HEAD
             android:layout_height="wrap_content"
+=======
+            android:layout_height="250dp"
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
             android:gravity="center"
             android:orientation="vertical"
             android:visibility="visible">
@@ -34,8 +42,13 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView"
                 cardCornerRadius="70dp"
+<<<<<<< HEAD
                 android:layout_width="150dp"
                 android:layout_height="150dp">
+=======
+                android:layout_width="270dp"
+                android:layout_height="270dp">
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
 
                 <ImageView
                     android:id="@+id/img_Prod"
@@ -73,7 +86,11 @@
             android:id="@+id/tvDescipcion"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
+<<<<<<< HEAD
             android:text="Descripcion:"
+=======
+            android:text="Descripción:"
+>>>>>>> ad70d40881c1ec55fd4670aac7c5ba724507bd1e
             android:textColor="@color/blueremasa"
             android:textStyle="bold"
             android:gravity="center"

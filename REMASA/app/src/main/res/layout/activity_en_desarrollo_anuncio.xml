@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondogeneral"
+    tools:context=".ActivityEnDesarrolloAnuncio">
+
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="76dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="15dp"
+        android:backgroundTint="#20386b"
+        android:contentDescription="@string/btnHome"
+        android:src="@drawable/btnhome"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCatalogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btnCatalogo"
+        android:layout_width="76dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#20386b"
+        android:contentDescription="@string/btnCatalogo"
+        android:src="@drawable/btncatalogobien"
+        android:text="@string/btnCatalogo"
+        android:textSize="18sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCarrito"
+        app:layout_constraintStart_toEndOf="@+id/btnHome"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btnCarrito"
+        android:layout_width="76dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#20386b"
+        android:contentDescription="@string/btnCarrito"
+        android:src="@drawable/btncarrito"
+        android:text="@string/btnCarrito"
+        android:textSize="18sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCuenta"
+        app:layout_constraintStart_toEndOf="@+id/btnCatalogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btnCuenta"
+        android:layout_width="76dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#20386b"
+        android:contentDescription="@string/btnCarrito"
+        android:src="@drawable/btncuenta"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnWA"
+        app:layout_constraintStart_toEndOf="@+id/btnCarrito"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btnWA"
+        android:layout_width="76dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#20386b"
+        android:contentDescription="@string/btnWA"
+        android:src="@drawable/btncontacto"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCuenta"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="56dp"
+        android:text="Sección en desarrollo"
+        android:textColor="@color/blueremasa"
+        android:textSize="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHome" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

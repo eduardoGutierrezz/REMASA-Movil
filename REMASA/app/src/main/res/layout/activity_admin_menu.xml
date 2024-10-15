@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_AdminMenu">
+
+    <ImageView
+        android:layout_width="416dp"
+        android:layout_height="730dp"
+        android:src="@drawable/fondogeneral"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="63dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="17dp"
+        android:backgroundTint="#20386b"
+        android:contentDescription="@string/btnHome"
+        android:src="@drawable/btniniciosurtidor"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/iVBanner"
+        app:layout_constraintEnd_toStartOf="@+id/btnCatalogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnCatalogo"
+        android:layout_width="63dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#20386b"
+        android:contentDescription="@string/btnCatalogo"
+        android:src="@drawable/btncatalogosurtior"
+        android:text="@string/btnCatalogo"
+        android:textSize="18sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/iVBanner"
+        app:layout_constraintEnd_toStartOf="@+id/btnAdminInventario"
+        app:layout_constraintStart_toEndOf="@+id/btnHome"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnAdminInventario"
+        android:layout_width="63dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#20386b"
+        android:contentDescription="@string/btnCarrito"
+        android:src="@drawable/btnadmininventario"
+        android:text="@string/btnCarrito"
+        android:textSize="24sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/iVBanner"
+        app:layout_constraintEnd_toStartOf="@+id/btnActualizarInventario"
+        app:layout_constraintStart_toEndOf="@+id/btnCatalogo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnActualizarInventario"
+        android:layout_width="63dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#20386b"
+        android:contentDescription="@string/btnCarrito"
+        android:src="@drawable/btnadminactualizarinventario"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/iVBanner"
+        app:layout_constraintEnd_toStartOf="@+id/btnAdminCuenta"
+        app:layout_constraintStart_toEndOf="@+id/btnAdminInventario"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnCuenta"
+        android:layout_width="63dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="17dp"
+        android:backgroundTint="#20386b"
+        android:contentDescription="@string/btnWA"
+        android:src="@drawable/cuentasurtidor"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/iVBanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnAdminCuenta"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnAdminCuenta"
+        android:layout_width="63dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#20386b"
+        android:contentDescription="@string/btnWA"
+        android:src="@drawable/btnactcuentas"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/iVBanner"
+        app:layout_constraintEnd_toStartOf="@+id/btnCuenta"
+        app:layout_constraintStart_toEndOf="@+id/btnActualizarInventario"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iVBanner"
+        android:layout_width="329dp"
+        android:layout_height="87dp"
+        app:layout_constraintBottom_toTopOf="@+id/iVAdminCuenta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHome"
+        app:srcCompat="@drawable/banneradmin" />
+
+
+    <ImageView
+        android:id="@+id/iVAdminCuenta"
+        android:layout_width="416dp"
+        android:layout_height="118dp"
+        android:src="@drawable/admincuenta"
+        app:layout_constraintBottom_toTopOf="@+id/iVcatalogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iVBanner" />
+
+    <ImageView
+        android:id="@+id/iVcatalogo"
+        android:layout_width="416dp"
+        android:layout_height="118dp"
+        android:src="@drawable/surtidorcatalogo"
+        app:layout_constraintBottom_toTopOf="@+id/iVInventario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iVAdminCuenta" />
+
+    <ImageView
+        android:id="@+id/iVInventario"
+        android:layout_width="416dp"
+        android:layout_height="118dp"
+        android:src="@drawable/admininventario"
+        app:layout_constraintBottom_toTopOf="@+id/iVActualizarInventario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iVcatalogo" />
+
+    <ImageView
+        android:id="@+id/iVActualizarInventario"
+        android:layout_width="416dp"
+        android:layout_height="118dp"
+        android:src="@drawable/adminactualizarinventario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iVInventario" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.REMASA"
+        tools:targetApi="31">
+        <activity
+            android:name=".ActivityEnDesarrolloAnuncio"
+            android:exported="false" />
+        <activity
+            android:name=".activity_AdminModificarProducto"
+            android:exported="false" />
+        <activity
+            android:name=".activity_AdminActualizarInventario"
+            android:exported="false" />
+        <activity
+            android:name=".activity_AdminInventario"
+            android:exported="false" />
+        <activity
+            android:name=".activity_AdminModificarCuenta"
+            android:exported="false" />
+        <activity
+            android:name=".activity_SurtidorModificarCuenta"
+            android:exported="false" />
+        <activity
+            android:name=".activity_AdminCuenta"
+            android:exported="false" />
+        <activity
+            android:name=".activity_AdminCatalogoFrenos"
+            android:exported="false" />
+        <activity
+            android:name=".activity_AdminCatalogoSuspencion"
+            android:exported="false" />
+        <activity
+            android:name=".activity_AdminCatalogo"
+            android:exported="false" />
+        <activity
+            android:name=".activity_AdminMenu"
+            android:exported="false" />
+        <activity
+            android:name=".activity_SurtidorCatalogoMangueras"
+            android:exported="false" />
+        <activity
+            android:name=".activity_SurtidorCatalogoConecciones"
+            android:exported="false" />
+        <activity
+            android:name=".activity_SurtidorCatalogoMiscelaneos"
+            android:exported="false" />
+        <activity
+            android:name=".activity_SurtidorCatalogoTorno"
+            android:exported="false" />
+        <activity
+            android:name=".activity_SurtidorCatalogoLubricantes"
+            android:exported="false" />
+        <activity
+            android:name=".activity_SurtidorCatalogoFiltracion"
+            android:exported="false" />
+        <activity
+            android:name=".activity_SurtidorCatalogoDireccion"
+            android:exported="false" />
+        <activity
+            android:name=".activity_SurtidorCatalogoFrenos"
+            android:exported="false" />
+        <activity
+            android:name=".activity_SurtidorCatalogoSuspencion"
+            android:exported="false" />
+        <activity
+            android:name=".activity_SurtidorCatalogo"
+            android:exported="false" />
+        <activity
+            android:name=".activity_SurtidorPedidosFinalizados"
+            android:exported="false" />
+        <activity
+            android:name=".activity_SurtidorPedidosEnProceso"
+            android:exported="false" />
+        <activity
+            android:name=".activity_SurtidorEntregaPorPaqueteria"
+            android:exported="false" />
+        <activity
+            android:name=".activity_SurtidorCuenta"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_SurtidorEntregaEnSucursal"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_SurtidorNuevosPedidos"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_SurtidorMenu"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_ClientePedidosPendientes"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_ClientePedidosFinalizados"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_ModificarCuenta"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_CuentaUsuario"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_FacturacionInfo"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activityFactura"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_DatosDeTransferencia"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_EntregaPaqueteria"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activityConfPedido"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_EntregaEnSucursal"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_TipoDeEntrega"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".actitivity_CatalogoMangueras"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_CatalogoConecciones"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_CatalogoMiscelaneos"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_CatalogoTorno"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_CatalogoLubricantes"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_CatalogoFiltracion"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_CatalogoDireccion"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_CatalogoFrenos"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activityContactanos"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity2activityLoggeo"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activityCatalogosuspencion"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activyCarrito"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activityCatalogo"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activityPresentacion"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

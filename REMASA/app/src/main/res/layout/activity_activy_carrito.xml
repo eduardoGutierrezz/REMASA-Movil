@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tipoentrega"
+    tools:context=".activyCarrito">
+
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="76dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="15dp"
+        android:backgroundTint="#20386b"
+        android:contentDescription="@string/btnHome"
+        android:src="@drawable/btnhome"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCatalogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btnCatalogo"
+        android:layout_width="76dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#20386b"
+        android:contentDescription="@string/btnCatalogo"
+        android:src="@drawable/btncatalogobien"
+        android:text="@string/btnCatalogo"
+        android:textSize="18sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCarrito"
+        app:layout_constraintStart_toEndOf="@+id/btnHome"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btnCarrito"
+        android:layout_width="76dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#20386b"
+        android:contentDescription="@string/btnCarrito"
+        android:src="@drawable/btncarrito"
+        android:text="@string/btnCarrito"
+        android:textSize="18sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCuenta"
+        app:layout_constraintStart_toEndOf="@+id/btnCatalogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btnCuenta"
+        android:layout_width="76dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#20386b"
+        android:contentDescription="@string/btnCarrito"
+        android:src="@drawable/btncuenta"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnWA"
+        app:layout_constraintStart_toEndOf="@+id/btnCarrito"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btnWA"
+        android:layout_width="76dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#20386b"
+        android:contentDescription="@string/btnWA"
+        android:src="@drawable/btncontacto"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCuenta"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/iVBanner"
+        android:layout_width="329dp"
+        android:layout_height="87dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHome"
+        app:srcCompat="@drawable/pedido" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RvProdct"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="31dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iVBanner" />
+
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="122dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/blueremasa"
+        android:text="Regresar"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnContinuar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTPerecioTotal"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnContinuar"
+        android:layout_width="128dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="73dp"
+        android:backgroundTint="@color/greenremasa"
+        android:text="Continuar"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnRegresar"
+        app:layout_constraintTop_toBottomOf="@+id/eTPerecioTotal"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tVTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="21dp"
+        android:text="Total"
+        android:textColor="@color/blueremasa"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegresar"
+        app:layout_constraintEnd_toStartOf="@+id/eTPerecioTotal"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tVMxn"
+        android:layout_width="40dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="21dp"
+        android:text="MXN"
+        android:textColor="@color/blueremasa"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnContinuar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/eTPerecioTotal"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/eTPerecioTotal"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="127.00"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tVMxn"
+        app:layout_constraintStart_toEndOf="@+id/tVTotal"
+        app:layout_constraintTop_toBottomOf="@+id/RvProdct"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

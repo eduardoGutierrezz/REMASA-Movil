@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondogeneral"
+    tools:context=".activity_CatalogoFiltracion">
+
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="76dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="15dp"
+        android:backgroundTint="#20386b"
+        android:drawableBottom="@drawable/hogar"
+        android:src="@drawable/btnhome"
+        android:contentDescription="@string/btnHome"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCatalogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btnCatalogo"
+        android:layout_width="76dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#20386b"
+        android:src="@drawable/btncatalogo"
+        android:contentDescription="@string/btnCatalogo"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCarrito"
+        app:layout_constraintStart_toEndOf="@+id/btnHome"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btnCarrito"
+        android:layout_width="76dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#20386b"
+        android:src="@drawable/btncarrito"
+        android:contentDescription="@string/btnCarrito"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCuenta"
+        app:layout_constraintStart_toEndOf="@+id/btnCatalogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btnCuenta"
+        android:layout_width="76dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#20386b"
+        android:src="@drawable/btncuenta"
+        android:contentDescription="@string/btnWA"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnWA"
+        app:layout_constraintStart_toEndOf="@+id/btnCarrito"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btnWA"
+        android:layout_width="76dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#20386b"
+        android:src="@drawable/btncontacto"
+        android:contentDescription="@string/btnWA"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCuenta"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/iVBannerCatalogo"
+        android:layout_width="329dp"
+        android:layout_height="87dp"
+        android:contentDescription="@string/descripcion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHome"
+        app:srcCompat="@drawable/titulocatalogo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:text="Filtracion"
+
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iVBannerCatalogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

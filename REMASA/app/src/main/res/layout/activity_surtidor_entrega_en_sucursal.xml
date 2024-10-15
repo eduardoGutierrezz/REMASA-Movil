@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondogeneral"
+    tools:context=".activity_SurtidorEntregaEnSucursal">
+
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="63dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#20386b"
+        android:contentDescription="@string/btnHome"
+        android:src="@drawable/btniniciosurtidor"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/iVBanner"
+        app:layout_constraintEnd_toStartOf="@+id/btnCatalogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnCatalogo"
+        android:layout_width="63dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#20386b"
+        android:contentDescription="@string/btnCatalogo"
+        android:src="@drawable/btncatalogosurtior"
+        android:text="@string/btnCatalogo"
+        android:textSize="18sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/iVBanner"
+        app:layout_constraintEnd_toStartOf="@+id/btnPedidosFinalizados"
+        app:layout_constraintStart_toEndOf="@+id/btnHome"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnPedidosFinalizados"
+        android:layout_width="63dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#20386b"
+        android:contentDescription="@string/btnCarrito"
+        android:src="@drawable/btnpedidosfinalizados"
+        android:text="@string/btnCarrito"
+        android:textSize="24sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/iVBanner"
+        app:layout_constraintEnd_toStartOf="@+id/btnPedidosEnProceso"
+        app:layout_constraintStart_toEndOf="@+id/btnCatalogo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnPedidosEnProceso"
+        android:layout_width="63dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#20386b"
+        android:contentDescription="@string/btnCarrito"
+        android:src="@drawable/btnpedidosenproceso"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/iVBanner"
+        app:layout_constraintEnd_toStartOf="@+id/btnNuevosPedidos"
+        app:layout_constraintStart_toEndOf="@+id/btnPedidosFinalizados"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnNuevosPedidos"
+        android:layout_width="63dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#20386b"
+        android:contentDescription="@string/btnWA"
+        android:src="@drawable/nuevospedidossurtidor"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/iVBanner"
+        app:layout_constraintEnd_toStartOf="@+id/btnCuenta"
+        app:layout_constraintStart_toEndOf="@+id/btnPedidosEnProceso"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnCuenta"
+        android:layout_width="63dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#20386b"
+        android:contentDescription="@string/btnWA"
+        android:src="@drawable/cuentasurtidor"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/iVBanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnNuevosPedidos"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iVBanner"
+        android:layout_width="329dp"
+        android:layout_height="87dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHome"
+        app:srcCompat="@drawable/bannersurtidorentregaensucursal" />
+
+    <TextView
+        android:id="@+id/tVProducto"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:background="@color/blueremasa"
+        android:gravity="center"
+        android:text="Producto"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/lVPedidos"
+        app:layout_constraintEnd_toStartOf="@+id/tVCodigo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVNumPedido"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tVCodigo"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:background="@color/blueremasa"
+        android:gravity="center"
+        android:text="Código"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/lVPedidos"
+        app:layout_constraintEnd_toStartOf="@+id/tVPrecioPza"
+        app:layout_constraintStart_toEndOf="@+id/tVProducto"
+        app:layout_constraintTop_toBottomOf="@+id/tVNumPedido"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/tVPrecioPza"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:background="@color/blueremasa"
+        android:gravity="center"
+        android:text="Precio pza"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/lVPedidos"
+        app:layout_constraintEnd_toStartOf="@+id/tVTotal"
+        app:layout_constraintStart_toEndOf="@+id/tVCodigo"
+        app:layout_constraintTop_toBottomOf="@+id/tVTelefonos"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tVTotal"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/blueremasa"
+        android:gravity="center"
+        android:text="Total"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/lVPedidos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tVPrecioPza"
+        app:layout_constraintTop_toBottomOf="@+id/tVTel"
+        tools:ignore="MissingConstraints" />
+
+    <ListView
+        android:id="@+id/lVPedidos"
+        android:layout_width="416dp"
+        android:layout_height="310dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVPrecioPza" />
+
+    <TextView
+        android:id="@+id/tVNombre"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="5dp"
+        android:text="Nombre:"
+        android:textColor="@color/blueremasa"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tVNumPedido"
+        app:layout_constraintEnd_toStartOf="@+id/tVNombres"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iVBanner" />
+
+    <TextView
+        android:id="@+id/tVNumPedido"
+        android:layout_width="115dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="4dp"
+        android:text="Num de pedido:"
+        android:textColor="@color/blueremasa"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tVProducto"
+        app:layout_constraintEnd_toStartOf="@+id/tVidPedido"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVNombre" />
+
+    <TextView
+        android:id="@+id/tVTelefonos"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Telefono:"
+        android:textColor="@color/blueremasa"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tVPrecioPza"
+        app:layout_constraintEnd_toStartOf="@+id/tVTel"
+        app:layout_constraintStart_toEndOf="@+id/tVidPedido"
+        app:layout_constraintTop_toBottomOf="@+id/tVNombres" />
+
+    <TextView
+        android:id="@+id/tVNombres"
+        android:layout_width="290dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="28dp"
+        android:text="Nombre completo del cliente"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tVNumPedido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tVNombre"
+        app:layout_constraintTop_toBottomOf="@+id/iVBanner" />
+
+    <TextView
+        android:id="@+id/tVidPedido"
+        android:layout_width="65dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:text="178525"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tVPrecioPza"
+        app:layout_constraintEnd_toStartOf="@+id/tVTelefonos"
+        app:layout_constraintStart_toEndOf="@+id/tVNumPedido"
+        app:layout_constraintTop_toBottomOf="@+id/tVNombres" />
+
+    <TextView
+        android:id="@+id/tVTel"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="25dp"
+        android:text="3312812816"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tVPrecioPza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tVTelefonos"
+        app:layout_constraintTop_toBottomOf="@+id/tVNombres" />
+
+    <TextView
+        android:id="@+id/tVTotalFinal"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="85dp"
+        android:text="Total"
+        android:textColor="@color/blueremasa"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/eTTotal"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="585dp" />
+
+    <EditText
+        android:id="@+id/eTTotal"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="text"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tVMxn"
+        app:layout_constraintStart_toEndOf="@+id/tVTotalFinal"
+        app:layout_constraintTop_toBottomOf="@+id/lVPedidos"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tVMxn"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="86dp"
+        android:text="MXN"
+        android:textColor="@color/blueremasa"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/eTTotal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="585dp" />
+
+    <Button
+        android:id="@+id/btnCancelarPedido"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/blueremasa"
+        android:text="Cancelar pedido"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnPagado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVTotalFinal"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnPagado"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="53dp"
+        android:backgroundTint="@color/greenremasa"
+        android:text="Pagado"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCancelarPedido"
+        app:layout_constraintTop_toBottomOf="@+id/tVMxn"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

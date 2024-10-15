@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_DatosDeTransferencia">
+
+    <ImageView
+        android:id="@+id/iVBack"
+        android:layout_width="418dp"
+        android:layout_height="738dp"
+        android:layout_marginTop="-1dp"
+        android:src="@drawable/fondotransferencia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="76dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="15dp"
+        android:backgroundTint="#20386b"
+        android:contentDescription="@string/btnHome"
+        android:src="@drawable/btnhome"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCatalogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btnCatalogo"
+        android:layout_width="76dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#20386b"
+        android:contentDescription="@string/btnCatalogo"
+        android:src="@drawable/btncatalogo"
+        android:text="@string/btnCatalogo"
+        android:textSize="18sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCarrito"
+        app:layout_constraintStart_toEndOf="@+id/btnHome"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btnCarrito"
+        android:layout_width="76dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#20386b"
+        android:contentDescription="@string/btnCarrito"
+        android:src="@drawable/btncarrito"
+        android:text="@string/btnCarrito"
+        android:textSize="24sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCuenta"
+        app:layout_constraintStart_toEndOf="@+id/btnCatalogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btnCuenta"
+        android:layout_width="76dp"
+        android:layout_height="41dp"
+        android:contentDescription="@string/btnCarrito"
+        android:backgroundTint="#20386b"
+        android:src="@drawable/btncuenta"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnWA"
+        app:layout_constraintStart_toEndOf="@+id/btnCarrito"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btnWA"
+        android:layout_width="76dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#20386b"
+        android:contentDescription="@string/btnWA"
+        android:src="@drawable/btncontacto"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCuenta"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/iVBanner"
+        android:layout_width="329dp"
+        android:layout_height="87dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHome"
+        app:srcCompat="@drawable/bannercofirmacion" />
+
+    <ImageView
+        android:id="@+id/iVTituloDatos"
+        android:layout_width="347dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iVBanner"
+        app:srcCompat="@drawable/titulodatostransferencia" />
+
+    <ImageView
+        android:id="@+id/iVTransferenciaInfo"
+        android:layout_width="315dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iVTituloDatos"
+        app:srcCompat="@drawable/datostransferencia" />
+
+    <ImageView
+        android:id="@+id/iVFavorDeEnviar"
+        android:layout_width="327dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTPrecio"
+        app:srcCompat="@drawable/favordeenviar" />
+
+
+    <TextView
+        android:id="@+id/tVTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="6dp"
+        android:text="Total:"
+        android:textColor="@color/blueremasa"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/eTPrecio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iVTransferenciaInfo" />
+
+    <EditText
+        android:id="@+id/eTPrecio"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="6dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="95"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/tVMxn"
+        app:layout_constraintStart_toEndOf="@+id/tVTotal"
+        app:layout_constraintTop_toBottomOf="@+id/iVTransferenciaInfo" />
+
+    <TextView
+        android:id="@+id/tVMxn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="109dp"
+        android:text="MXN"
+        android:textColor="@color/blueremasa"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/eTPrecio"
+        app:layout_constraintTop_toBottomOf="@+id/iVTransferenciaInfo" />
+
+    <EditText
+        android:id="@+id/eTCorreos"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="55dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="monsefacturacion@hotmail.com"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iVFavorDeEnviar" />
+
+    <EditText
+        android:id="@+id/eTCorreos2"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="55dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="remasamg@hotmail.com"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTCorreos" />
+
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="17dp"
+        android:backgroundTint="@color/blueremasa"
+        android:text="Regresar"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnContinuar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTCorreos2" />
+
+    <Button
+        android:id="@+id/btnContinuar"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="65dp"
+        android:backgroundTint="@color/greenremasa"
+        android:minHeight="48dp"
+        android:text="Continuar"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnRegresar"
+        app:layout_constraintTop_toBottomOf="@+id/eTCorreos2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

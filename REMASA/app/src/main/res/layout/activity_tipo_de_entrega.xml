@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tipoentrega"
+    tools:context=".activity_TipoDeEntrega">
+
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="76dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="15dp"
+        android:backgroundTint="#20386b"
+        android:contentDescription="@string/btnHome"
+        android:src="@drawable/btnhome"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCatalogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btnCatalogo"
+        android:layout_width="76dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#20386b"
+        android:contentDescription="@string/btnCatalogo"
+        android:src="@drawable/btncatalogo"
+        android:text="@string/btnCatalogo"
+        android:textSize="18sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCarrito"
+        app:layout_constraintStart_toEndOf="@+id/btnHome"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btnCarrito"
+        android:layout_width="76dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#20386b"
+        android:contentDescription="@string/btnCarrito"
+        android:src="@drawable/btncarrito"
+        android:text="@string/btnCarrito"
+        android:textSize="18sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCuenta"
+        app:layout_constraintStart_toEndOf="@+id/btnCatalogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btnCuenta"
+        android:layout_width="76dp"
+        android:layout_height="41dp"
+        android:contentDescription="@string/btnCarrito"
+        android:backgroundTint="#20386b"
+        android:src="@drawable/btncuenta"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnWA"
+        app:layout_constraintStart_toEndOf="@+id/btnCarrito"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btnWA"
+        android:layout_width="76dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#20386b"
+        android:contentDescription="@string/btnWA"
+        android:src="@drawable/btncontacto"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCuenta"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/iVBanner"
+        android:layout_width="329dp"
+        android:layout_height="87dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHome"
+        app:srcCompat="@drawable/pedido" />
+
+    <TextView
+        android:id="@+id/tVTipoDeEntrega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="135dp"
+        android:text="Tipo de entrega"
+        android:textColor="@color/blueremasa"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iVBanner" />
+
+    <ImageView
+        android:id="@+id/iVSucursal"
+        android:layout_width="67dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVTipoDeEntrega"
+        app:srcCompat="@drawable/iconoentregasucursal" />
+
+    <ImageView
+        android:id="@+id/iVPaqueteria"
+        android:layout_width="67dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVTipoDeEntrega"
+        app:srcCompat="@drawable/iconoentregapaqueteria" />
+
+    <Button
+        android:id="@+id/btnSucursal"
+        android:layout_width="155dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/greenremasa"
+        android:text="@string/btnSucursal"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/btnPaqueteria"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iVSucursal" />
+
+    <Button
+        android:id="@+id/btnPaqueteria"
+        android:layout_width="155dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="48dp"
+        android:backgroundTint="@color/greenremasa"
+        android:text="@string/btnPqueteria"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSucursal"
+        app:layout_constraintTop_toBottomOf="@+id/iVPaqueteria" />
+
+    <ImageView
+        android:id="@+id/iVInfo"
+        android:layout_width="340dp"
+        android:layout_height="162dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSucursal"
+        app:srcCompat="@drawable/textoinformacionentrega" />
+
+    <Button
+        android:id="@+id/btnRegresar1"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="236dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="45dp"
+        android:backgroundTint="@color/blueremasa"
+        android:text="Regresar"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iVInfo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
